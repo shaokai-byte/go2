@@ -1,0 +1,6 @@
+names: !!set
+  grass: null
+nc: 1
+path: /home/s/2025-07/train_yolo11/grass_dataset
+train: train/images
+val: val/images

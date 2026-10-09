@@ -1,0 +1,12 @@
+# ===== 超过 GitHub 100 MB 单文件硬上限 =====
+# results/predict/third - person perspective.avi (136 MB)
+# 想连它一起传，用 git lfs track "*.avi" 后再取消这行
+*.avi
+
+# ===== Python / 编辑器 =====
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
