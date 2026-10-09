@@ -9,6 +9,8 @@
 
 已成功运行unitree_sdk2_python/example/go2/front_camera文件夹中的程序
 
+## 第一次学习且首次接触机器狗：先完成go2基础开发指南.pdf中内容，再学习此文档！！！
+
 ## camera
 机器狗相机不同的模型识别和控制程序
 ## sport
