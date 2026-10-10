@@ -5,7 +5,9 @@
 
 ## 前提
 已完成官网（https://support.unitree.com/home/zh/developer/Python）python服务接口环境部署 ，并安装unitree_sdk2_python
+
 已成功运行unitree_sdk2_python/example/go2/high_level文件夹中的程序
+
 已成功运行unitree_sdk2_python/example/go2/front_camera文件夹中的程序
 
 ## camera
