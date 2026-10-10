@@ -10,3 +10,6 @@ __pycache__/
 .vscode/
 Thumbs.db
 desktop.ini
+
+# ===== 临时文件 =====
+.codex-*
