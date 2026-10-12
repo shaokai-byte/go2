@@ -2,7 +2,7 @@
 
 > **本仓库：<https://github.com/shaokai-byte/go2>**
 >
-> 状态：已核实（学习路线依据仓库 `camera` / `sport` / `yolo11` 三个核心目录设计，章节直达链接已逐一核对）
+> 状态：已核实（学习路线依据仓库 `camera` / `sport` / `yolo11` 三个核心目录设计）
 > 维护日期：2026-10-12
 
 ## 课程定位
@@ -17,11 +17,11 @@
 
 ## 面向对象
 
-已经跑通官方 `unitree_sdk2_python` 基础例程、想要继续深入的成员。默认会日常使用电脑与 Python 命令行，遇到不懂的库随用随查（本仓库各子目录均有对应 `README zh.md`）。
+已经跑通官方 `unitree_sdk2_python` 基础例程、想要继续深入的成员。默认会使用Ubuntu基本命令与 Python 命令行，遇到不懂的文件夹随用随查（本仓库各子目录均有对应 `README zh.md`）。
 
 ## 前置知识
 
-有软性前置：必须**先完成官方 SDK 环境部署**，并成功跑通 `unitree_sdk2_python/example/go2/` 下 `high_level` 与 `front_camera` 两个文件夹的例程。**第一次接触机器狗的学习者，请先完成本仓库根目录 `go2基础开发指南.pdf` 的内容，再进入正文。**
+有前置要求：必须**先完成官方 SDK 环境部署**，并成功跑通 `unitree_sdk2_python/example/go2/` 下 `high_level` 与 `front_camera` 两个文件夹的例程。**第一次接触机器狗的学习者，请先完成本仓库根目录 `go2基础开发指南.pdf` 的内容，再进入正文。**
 
 ## 学习目标
 
@@ -35,10 +35,14 @@
 
 整体分三块：**阶段 0 打地基（官方 SDK），阶段 1 造运动能力（身体），阶段 2–3 给狗装眼睛与大脑（视觉 + 自训模型）**。上一阶段过关再进入下一阶段。表中目录名均链接到本仓库对应目录。
 
-| 阶段 | 仓库目录 | 内容 | 过关标准 | 参考时长 |
+| 阶段       | 仓库目录 | 内容 | 过关标准 | 参考时长 |
+
 | 0 环境部署 | [go2基础开发指南.pdf](./go2基础开发指南.pdf) + [官方 SDK 文档](https://support.unitree.com/home/zh/developer/Python) | 部署 `unitree_sdk2_python`，跑通 `high_level` 与 `front_camera` 例程 | 能远程控制机器狗运动并读取前视相机画面 | 1–2 天 |
+
 | 1 动作控制 | [sport](./sport)（[action](./sport/action) → [walk](./sport/walk)） | 动作函数调用与汇总、行走控制的 4 种实现方式 | 能写出自己的动作序列并控制行走距离 | 2–3 天 |
+
 | 2 相机识别 | [camera](./camera)（[coco_ssd_detect](./camera/coco_ssd_detect) → [gesture_detect_control](./camera/gesture_detect_control) → [line_following](./camera/line_following) → [yolo_detect_follow](./camera/yolo_detect_follow)） | SSD/COCO 目标检测与人体跟随、MediaPipe 手势识别控制、OpenCV 颜色巡线、YOLO 检测与跟随 | 至少跑通一条「识别 → 调动作/跟随」的闭环 | 4–7 天 |
+
 | 3 模型训练 | [yolo11](./yolo11)（[train_yolo11](./yolo11/train_yolo11)） | YOLO11 数据采集、标注、数据集构建、训练、预测全流程 | 用自己的数据集训出一个 `.pt` 并完成一次预测 | 1–2 周 |
 
 ### 知识结构树
